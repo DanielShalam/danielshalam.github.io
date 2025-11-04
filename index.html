@@ -18,7 +18,7 @@
     a:hover{text-decoration:underline}
     .wrap{max-width:1000px; margin:0 auto; padding:28px 20px}
     header{display:grid; grid-template-columns:120px 1fr; gap:22px; align-items:center; margin-bottom:28px}
-    .avatar{width:120px; height:120px; border-radius:16px; background:linear-gradient(135deg,var(--brand),var(--accent)); display:flex; align-items:center; justify-content:center; font-family:"JetBrains Mono",monospace; font-weight:700; font-size:28px; color:#0b0f17}
+    .avatar{width:120px; height:120px; border-radius:16px; object-fit:cover; display:block}
     .title h1{margin:0 0 6px 0; font-weight:800; font-size:34px}
     .title p{margin:4px 0; color:var(--muted)}
     .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
@@ -41,12 +41,13 @@
     .news li{margin:6px 0}
     footer{opacity:.8; font-size:13px; margin:20px 0}
     .mono{font-family:"JetBrains Mono",monospace}
+  .pubimg{width:100%; height:180px; object-fit:cover; border-radius:10px; margin-bottom:10px; border:1px solid #24304c; background:#0d1424}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="avatar" aria-label="DS">DS</div>
+      <img class="avatar" src="main.jpg" alt="Daniel Shalam"/>
       <div class="title">
         <h1>Daniel Shalam</h1>
         <p>Ph.D. Candidate, Computer Science - University of Haifa</p>
@@ -93,9 +94,12 @@
       <h2>Selected Publications</h2>
       <div class="grid">
         <div class="pub">
+          <img class="pubimg" src="fsf.jpg" alt="Few-Shot Flow paper image"/>
           <div class="venue">Under review</div>
-          <div class="title">Few-Shot Flow: Flow-Matching Alignment for Uni-Modal Vision–Language Models</div>
+          <div class="title">Few-Shot Flow: Flow-Matching Alignment for Uni-Modal Vision- Language Models</div>
           <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
+          <p>We propose FSF, a framework that aligns independent vision and text encoders for few-shot multimodal classification without paired training data, combining a closed-form Procrustes map with a flow-matching prior to preserve geometry while enabling adaptation.</p>
+          <details class="btn"><summary>Abstract</summary><p>Few-shot classification with vision-language models remains challenging, particularly when relying on multi-modal encoders such as CLIP that are restricted to paired image-text data. We introduce FSF, a framework that leverages arbitrary uni-modal encoders-including vision or text models that were pretrained on broad or domain-specific corpora-and aligns them for cross-modal classification. FSF first applies a closed-form orthogonal Procrustes map to align image and text embeddings while preserving their geometry, and then trains a lightweight flow-matching prior that regularizes adaptation in the few-shot regime. At inference, images are classified by cosine similarity in the aligned feature space between query embeddings and mapped class prototypes. Experiments on standard benchmarks, ImageNet variants, and VinDr-CXR, a large-scale chest X-ray benchmark, show that FSF is able to leverage stronger or specialized encoders, achieving competitive or superior accuracy compared to recent adaptation methods.</p></details>
           <div class="buttons">
             <a class="btn" href="#" aria-disabled="true">arXiv (soon)</a>
             <details class="btn"><summary>BibTeX</summary><pre class="mono" style="white-space:pre-wrap; margin:8px 0 0 0">@misc{shalam2025fsf,
@@ -107,9 +111,12 @@
           </div>
         </div>
         <div class="pub">
+          <img class="pubimg" src="bam.jpg" alt="BAM paper image"/>
           <div class="venue">ECCV 2024</div>
-          <div class="title">Unsupervised Representation Learning by Balanced Self‑Attention Matching (BAM)</div>
+          <div class="title">Unsupervised Representation Learning by Balanced Self-Attention Matching (BAM)</div>
           <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
+          <p>BAM performs unsupervised visual representation learning by matching self-attention vectors across images, encouraging geometry-preserving correspondences that improve downstream recognition.</p>
+          <details class="btn"><summary>Abstract</summary><p>We present Balanced Self-Attention Matching (BAM), an unsupervised method that aligns self-attention representations across images to learn robust visual features without labels. By enforcing balanced correspondences between attention vectors, the model captures semantically consistent structure and improves transfer to recognition tasks.</p></details>
           <div class="buttons">
             <a class="btn" href="https://arxiv.org/abs/2408.02014" target="_blank" rel="noopener">Paper</a>
             <a class="btn" href="https://github.com/DanielShalam/BAM" target="_blank" rel="noopener">Code</a>
@@ -123,9 +130,12 @@
           </div>
         </div>
         <div class="pub">
+          <img class="pubimg" src="bpa.jpg" alt="BPA paper image"/>
           <div class="venue">ICML 2024</div>
-          <div class="title">The Balanced‑Pairwise‑Affinities Feature Transform (BPA)</div>
+          <div class="title">The Balanced-Pairwise-Affinities Feature Transform (BPA)</div>
           <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
+          <p>BPA is a training-free optimal-transport feature transform that balances pairwise affinities to enhance transductive few-shot classification.</p>
+          <details class="btn"><summary>Abstract</summary><p>We propose the Balanced-Pairwise-Affinities (BPA) transform, a training-free, optimal-transport inspired procedure that reweights similarities to enforce balanced pairwise relations among samples. Applied in transductive few-shot settings, BPA consistently improves representations and leads to state-of-the-art accuracy without additional training.</p></details>
           <div class="buttons">
             <a class="btn" href="https://proceedings.mlr.press/v235/shalam24a.html" target="_blank" rel="noopener">Paper</a>
             <a class="btn" href="https://github.com/DanielShalam/BPA" target="_blank" rel="noopener">Code</a>
@@ -145,9 +155,12 @@
           </div>
         </div>
         <div class="pub">
+          <img class="pubimg" src="mfsc.jpg" alt="MFSC paper image"/>
           <div class="venue">BMVC 2023</div>
-          <div class="title">MFSC: Matching by Few‑Shot Classification</div>
+          <div class="title">MFSC: Matching by Few-Shot Classification</div>
           <div class="authors"><strong>Daniel Shalam</strong>, Elie Abboud, Roee Litman, Simon Korman</div>
+          <p>MFSC frames visual correspondence as a few-shot classification problem, enabling robust matching under low-label and domain-limited regimes.</p>
+          <details class="btn"><summary>Abstract</summary><p>We reformulate correspondence by treating match candidates as class prototypes and performing few-shot classification to infer matches. This low-label paradigm improves robustness to domain shifts and limited supervision, achieving strong results on challenging correspondence benchmarks.</p></details>
           <div class="buttons">
             <a class="btn" href="https://papers.bmvc2023.org/0677.pdf" target="_blank" rel="noopener">Paper</a>
             <details class="btn"><summary>BibTeX</summary><pre class="mono" style="white-space:pre-wrap; margin:8px 0 0 0">@inproceedings{Shalam_2023_BMVC,
