@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel Shalam — Research</title>
+  <meta name="description" content="Daniel Shalam — Ph.D. Candidate in Computer Science at the University of Haifa. Research in representation learning, multimodal alignment, generative modeling, and data-efficient learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f17; --panel:#121826; --ink:#e6ecff; --muted:#9bb0d6; --brand:#6aa4ff; --accent:#7cf0ff; --chip:#202a40; --link:#8db6ff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--ink); font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.6}
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1000px; margin:0 auto; padding:28px 20px}
+    header{display:grid; grid-template-columns:120px 1fr; gap:22px; align-items:center; margin-bottom:28px}
+    .avatar{width:120px; height:120px; border-radius:16px; background:linear-gradient(135deg,var(--brand),var(--accent)); display:flex; align-items:center; justify-content:center; font-family:"JetBrains Mono",monospace; font-weight:700; font-size:28px; color:#0b0f17}
+    .title h1{margin:0 0 6px 0; font-weight:800; font-size:34px}
+    .title p{margin:4px 0; color:var(--muted)}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .chip{font-size:12px; background:var(--chip); color:var(--ink); border:1px solid #24304c; padding:6px 10px; border-radius:999px}
+    nav{display:flex; gap:16px; flex-wrap:wrap; margin-top:10px}
+    nav a{padding:6px 10px; border-radius:10px; background:#10182a; border:1px solid #223352}
+    section{background:var(--panel); border:1px solid #1b2740; border-radius:16px; padding:22px; margin:16px 0}
+    section h2{margin:0 0 12px 0; font-size:20px}
+    .grid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    @media (max-width:800px){
+      header{grid-template-columns:1fr;}
+      .grid{grid-template-columns:1fr}
+    }
+    .pub{padding:14px; border:1px solid #24304c; border-radius:12px; background:#0f1627}
+    .pub .venue{font-size:12px; color:#a7b6da}
+    .pub .title{font-weight:600}
+    .pub .authors{color:#cdd7f1; font-size:14px}
+    .buttons{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px}
+    .btn{display:inline-block; padding:6px 10px; border-radius:8px; border:1px solid #2a3a60; background:#111a2e; font-size:13px}
+    .news li{margin:6px 0}
+    footer{opacity:.8; font-size:13px; margin:20px 0}
+    .mono{font-family:"JetBrains Mono",monospace}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar" aria-label="DS">DS</div>
+      <div class="title">
+        <h1>Daniel Shalam</h1>
+        <p>Ph.D. Candidate, Computer Science — University of Haifa</p>
+        <p>Research: representation learning • multimodal alignment • generative modeling • data-efficient learning</p>
+        <nav>
+          <a href="#publications">Publications</a>
+          <a href="#research">Research</a>
+          <a href="#news">News</a>
+          <a href="#teaching">Teaching</a>
+          <a href="#awards">Awards</a>
+          <a href="Daniel_Shalam_CV.pdf">CV</a>
+          <a href="https://scholar.google.com/citations?user=Ffu2TCkAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://github.com/DanielShalam" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:Dani360@gmail.com">Email</a>
+        </nav>
+        <div class="chips">
+          <span class="chip">Python</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">Optimal Transport</span>
+          <span class="chip">Flow / Diffusion</span>
+          <span class="chip">Few-shot</span>
+        </div>
+      </div>
+    </header>
+
+    <section id="research">
+      <h2>Research Summary</h2>
+      <p>
+        I develop methods for <strong>representation learning</strong> and <strong>multimodal alignment</strong> with a focus on
+        <strong>flow-based</strong> and training-efficient objectives. My Ph.D. work proposes <em>Few-Shot Flow (FSF)</em> — aligning
+        independent vision and text encoders for few-shot classification without paired training data (orthogonal Procrustes alignment + flow-matching prior).
+      </p>
+    </section>
+
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li><span class="mono">Oct 2025</span> — Submitted first Ph.D. paper on flow-based alignment of uni-modal encoders (FSF).</li>
+        <li><span class="mono">2024</span> — ICML (BPA), ECCV (BAM), BMVC (MFSC) first-author papers.</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Selected Publications</h2>
+      <div class="grid">
+        <div class="pub">
+          <div class="venue">Under review</div>
+          <div class="title">Few-Shot Flow: Flow-Matching Alignment for Uni-Modal Vision–Language Models</div>
+          <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
+          <div class="buttons">
+            <a class="btn" href="#" aria-disabled="true">arXiv (soon)</a>
+            <a class="btn" href="#" aria-disabled="true">Code (soon)</a>
+            <a class="btn" href="#" aria-disabled="true">BibTeX</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="venue">ECCV 2024</div>
+          <div class="title">Unsupervised Representation Learning by Balanced Self‑Attention Matching (BAM)</div>
+          <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
+          <div class="buttons">
+            <a class="btn" href="https://arxiv.org/abs/2408.02014" target="_blank" rel="noopener">Paper</a>
+            <a class="btn" href="#" aria-disabled="true">Code</a>
+            <a class="btn" href="#" aria-disabled="true">BibTeX</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="venue">ICML 2024</div>
+          <div class="title">The Balanced‑Pairwise‑Affinities Feature Transform (BPA)</div>
+          <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
+          <div class="buttons">
+            <a class="btn" href="https://arxiv.org/abs/2407.01467" target="_blank" rel="noopener">Paper</a>
+            <a class="btn" href="#" aria-disabled="true">Code</a>
+            <a class="btn" href="#" aria-disabled="true">BibTeX</a>
+          </div>
+        </div>
+        <div class="pub">
+          <div class="venue">BMVC 2023</div>
+          <div class="title">MFSC: Matching by Few‑Shot Classification</div>
+          <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
+          <div class="buttons">
+            <a class="btn" href="https://papers.bmvc2023.org/0677.pdf" target="_blank" rel="noopener">Paper</a>
+            <a class="btn" href="#" aria-disabled="true">Code</a>
+            <a class="btn" href="#" aria-disabled="true">BibTeX</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards">
+      <h2>Awards & Honors</h2>
+      <ul>
+        <li><strong>Bloom School of Advanced Studies Excellence Scholarship</strong> (Ph.D., 340,000 NIS)</li>
+        <li><strong>Dean’s List</strong>, M.Sc. Program</li>
+        <li>Oral Presentation — Israel Computer Vision Day 2024</li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching & Mentorship</h2>
+      <ul>
+        <li>Teaching Assistant — Computer Vision (2022–2024)</li>
+        <li>Mentored deep learning projects (PyTorch, TensorFlow)</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Daniel Shalam · Last updated Oct 2025 · <a href="mailto:Dani360@gmail.com">Dani360@gmail.com</a></div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
