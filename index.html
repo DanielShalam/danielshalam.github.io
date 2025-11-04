@@ -54,13 +54,14 @@
         <nav>
           <a href="#publications">Publications</a>
           <a href="#research">Research</a>
-          <a href="#news">News</a>
           <a href="#teaching">Teaching</a>
           <a href="#awards">Awards</a>
           <a href="Daniel_Shalam_CV.pdf">CV</a>
+        </nav>
+        <nav style="margin-top:6px">
+          <a href="mailto:Dani360@gmail.com">Email</a>
           <a href="https://scholar.google.com/citations?user=Ffu2TCkAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
           <a href="https://github.com/DanielShalam" target="_blank" rel="noopener">GitHub</a>
-          <a href="mailto:Dani360@gmail.com">Email</a>
         </nav>
         <div class="chips">
           <span class="chip">Python</span>
@@ -81,14 +82,6 @@
       </p>
     </section>
 
-    <section id="news">
-      <h2>News</h2>
-      <ul class="news">
-        <li><span class="mono">Oct 2025</span> — Submitted first Ph.D. paper on flow-based alignment of uni-modal encoders (FSF).</li>
-        <li><span class="mono">2024</span> — ICML (BPA), ECCV (BAM), BMVC (MFSC) first-author papers.</li>
-      </ul>
-    </section>
-
     <section id="publications">
       <h2>Selected Publications</h2>
       <div class="grid">
@@ -98,8 +91,12 @@
           <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
           <div class="buttons">
             <a class="btn" href="#" aria-disabled="true">arXiv (soon)</a>
-            <a class="btn" href="#" aria-disabled="true">Code (soon)</a>
-            <a class="btn" href="#" aria-disabled="true">BibTeX</a>
+            <details class="btn"><summary>BibTeX</summary><pre class="mono" style="white-space:pre-wrap; margin:8px 0 0 0">@misc{shalam2025fsf,
+  title={Few-Shot Flow: Flow-Matching Alignment for Uni-Modal Vision--Language Models},
+  author={Daniel Shalam and Simon Korman},
+  year={2025},
+  note={Under review}
+}</pre></details>
           </div>
         </div>
         <div class="pub">
@@ -108,8 +105,13 @@
           <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
           <div class="buttons">
             <a class="btn" href="https://arxiv.org/abs/2408.02014" target="_blank" rel="noopener">Paper</a>
-            <a class="btn" href="#" aria-disabled="true">Code</a>
-            <a class="btn" href="#" aria-disabled="true">BibTeX</a>
+            <details class="btn"><summary>BibTeX</summary><pre class="mono" style="white-space:pre-wrap; margin:8px 0 0 0">@article{shalam2024bam,
+  title={Unsupervised Representation Learning by Balanced Self-Attention Matching},
+  author={Shalam, Daniel and Korman, Simon},
+  journal={arXiv preprint arXiv:2408.02014},
+  year={2024},
+  url={https://arxiv.org/abs/2408.02014}
+}</pre></details>
           </div>
         </div>
         <div class="pub">
@@ -117,19 +119,36 @@
           <div class="title">The Balanced‑Pairwise‑Affinities Feature Transform (BPA)</div>
           <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
           <div class="buttons">
-            <a class="btn" href="https://arxiv.org/abs/2407.01467" target="_blank" rel="noopener">Paper</a>
-            <a class="btn" href="#" aria-disabled="true">Code</a>
-            <a class="btn" href="#" aria-disabled="true">BibTeX</a>
+            <a class="btn" href="https://proceedings.mlr.press/v235/shalam24a.html" target="_blank" rel="noopener">Paper</a>
+            <details class="btn"><summary>BibTeX</summary><pre class="mono" style="white-space:pre-wrap; margin:8px 0 0 0">@InProceedings{pmlr-v235-shalam24a,
+  title = {The Balanced-Pairwise-Affinities Feature Transform},
+  author = {Shalam, Daniel and Korman, Simon},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning},
+  pages = {44342--44357},
+  year = {2024},
+  editor = {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = {235},
+  series = {Proceedings of Machine Learning Research},
+  month = {21--27 Jul},
+  publisher = {PMLR},
+  url = {https://proceedings.mlr.press/v235/shalam24a.html}
+}</pre></details>
           </div>
         </div>
         <div class="pub">
           <div class="venue">BMVC 2023</div>
           <div class="title">MFSC: Matching by Few‑Shot Classification</div>
-          <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
+          <div class="authors"><strong>Daniel Shalam</strong>, Elie Abboud, Roee Litman, Simon Korman</div>
           <div class="buttons">
             <a class="btn" href="https://papers.bmvc2023.org/0677.pdf" target="_blank" rel="noopener">Paper</a>
-            <a class="btn" href="#" aria-disabled="true">Code</a>
-            <a class="btn" href="#" aria-disabled="true">BibTeX</a>
+            <details class="btn"><summary>BibTeX</summary><pre class="mono" style="white-space:pre-wrap; margin:8px 0 0 0">@inproceedings{Shalam_2023_BMVC,
+  author    = {Daniel Shalam and Elie Abboud and Roee Litman and Simon Korman},
+  title     = {MFSC: Matching by Few-Shot Classification},
+  booktitle = {34th British Machine Vision Conference (BMVC)},
+  address   = {Aberdeen, UK},
+  year      = {2023},
+  url       = {https://papers.bmvc2023.org/0677.pdf}
+}</pre></details>
           </div>
         </div>
       </div>
@@ -138,7 +157,7 @@
     <section id="awards">
       <h2>Awards & Honors</h2>
       <ul>
-        <li><strong>Bloom School of Advanced Studies Excellence Scholarship</strong> (Ph.D., 340,000 NIS)</li>
+        <li><strong>Bloom School of Advanced Studies Excellence Scholarship</strong> (Ph.D.)</li>
         <li><strong>Dean’s List</strong>, M.Sc. Program</li>
         <li>Oral Presentation — Israel Computer Vision Day 2024</li>
       </ul>
