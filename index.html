@@ -7,7 +7,7 @@
   <style>
     body {font-family: 'Inter', sans-serif; background-color:#0b1120; color:#e6e9ef; line-height:1.6; max-width:900px; margin:auto; padding:40px;}
     header {display:flex; flex-direction:column; align-items:center; text-align:center; margin-bottom:40px;}
-    .avatar {width:180px; height:180px; border-radius:50%; object-fit:cover; margin-bottom:16px; border:3px solid #1d263b;}
+    .avatar {width:220px; height:220px; border-radius:50%; object-fit:cover; margin-bottom:20px; border:3px solid #1d263b;}
     nav a {color:#8ab4f8; text-decoration:none; margin:0 6px;}
     .btn {color:#e6e9ef; background:#1d263b; padding:6px 10px; border-radius:6px; text-decoration:none; font-size:0.9rem;}
     .pubimg {width:100%; height:180px; object-fit:cover; border-radius:10px; margin-bottom:10px; border:1px solid #24304c; background:#0d1424;}
@@ -20,7 +20,7 @@
     <img src="main.jpg" alt="Daniel Shalam" class="avatar" />
     <h1>Daniel Shalam</h1>
     <p>Ph.D. Candidate, Computer Science - University of Haifa</p>
-    <p>I am a Ph.D. candidate in Computer Science at the University of Haifa, advised by Dr. Simon Korman. My research explores the intersection of representation learning, multimodal alignment, and generative modeling — focusing on how uni-modal vision and text encoders can be efficiently aligned without paired data. I aim to build models that generalize well in data-scarce domains such as medical imaging. Before my Ph.D., I completed my M.Sc. (Summa Cum Laude), where my work introduced optimal-transport-based frameworks for few-shot classification and transductive adaptation. I am a recipient of the Bloom Excellence Scholarship and was listed on the Dean’s List during my M.Sc. studies. I also presented my work at the Israel Computer Vision Day 2024. Beyond research, I am passionate about efficient learning paradigms, self-supervised methods, and building interpretable, scalable models that bridge theory and practice.</p>
+    <p>I am a Ph.D. candidate in Computer Science at the University of Haifa, advised by Prof. Simon Korman. My research focuses on representation learning, multimodal alignment, and generative modeling — studying how independent vision and text encoders can be aligned for few-shot multimodal learning without paired data. My work combines principles from optimal transport, flow-based methods, and data-efficient adaptation. I received my M.Sc. (Summa Cum Laude) from the University of Haifa, where I developed optimal-transport-based frameworks for few-shot classification and transductive adaptation. I am a recipient of the Bloom Excellence Scholarship and the Dean’s List Award, and presented my research at the Israel Computer Vision Day 2024. I am broadly interested in efficient and interpretable learning systems that bridge theoretical insight with large-scale experimentation.</p>
     <nav>
       <a href="#publications">Publications</a>
       <a href="CV_Daniel.pdf">CV</a>
@@ -38,15 +38,9 @@
       <div class="venue">Under review</div>
       <div class="title">Few-Shot Flow: Flow-Matching Alignment for Uni-Modal Vision-Language Models</div>
       <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
-      <details class="btn"><summary>Abstract</summary><p>We introduce Few-Shot Flow (FSF), a flow-based framework that aligns independent vision and text encoders without paired data. FSF combines an orthogonal Procrustes mapping with a flow-matching prior to preserve geometry while enabling flexible adaptation for few-shot multimodal classification, achieving state-of-the-art results in low-shot regimes.</p></details>
+      <details class="btn"><summary>Abstract</summary><p>Few-Shot Flow (FSF) aligns independent vision and text encoders without paired data. It combines an orthogonal Procrustes mapping with a flow-matching prior that preserves geometry while enabling flexible adaptation for few-shot multimodal classification, achieving strong results on challenging domains such as medical imaging.</p></details>
       <div class="buttons">
         <a class="btn" href="#">arXiv (soon)</a>
-        <details class="btn"><summary>BibTeX</summary><pre>@misc{shalam2025fsf,
-  title={Few-Shot Flow: Flow-Matching Alignment for Uni-Modal Vision--Language Models},
-  author={Daniel Shalam and Simon Korman},
-  year={2025},
-  note={Under review}
-}</pre></details>
       </div>
     </div>
 
@@ -55,7 +49,7 @@
       <div class="venue">ECCV 2024</div>
       <div class="title">Unsupervised Representation Learning by Balanced Self-Attention Matching (BAM)</div>
       <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
-      <details class="btn"><summary>Abstract</summary><p>Balanced Self-Attention Matching (BAM) aligns self-attention representations across images to learn robust features without supervision. By enforcing balanced correspondences between attention vectors, BAM captures semantically consistent structure and enhances generalization across recognition tasks.</p></details>
+      <details class="btn"><summary>Abstract</summary><p>Balanced Self-Attention Matching (BAM) aligns self-attention representations across images to learn geometry-preserving, semantically consistent features in a completely unsupervised manner. This approach improves downstream recognition and robustness to distribution shifts.</p></details>
       <div class="buttons">
         <a class="btn" href="https://arxiv.org/abs/2408.02014" target="_blank">Paper</a>
         <a class="btn" href="https://github.com/DanielShalam/BAM" target="_blank">Code</a>
@@ -63,11 +57,11 @@
     </div>
 
     <div class="pub">
-      <img class="pubimg" src="bpa_worlflow.jpg" alt="BPA paper image"/>
+      <img class="pubimg" src="bpa_workflow.jpg" alt="BPA paper image"/>
       <div class="venue">ICML 2024</div>
       <div class="title">The Balanced-Pairwise-Affinities Feature Transform (BPA)</div>
       <div class="authors"><strong>Daniel Shalam</strong>, Simon Korman</div>
-      <details class="btn"><summary>Abstract</summary><p>The Balanced-Pairwise-Affinities (BPA) transform is a training-free, optimal-transport-inspired method that balances pairwise affinities to improve transductive few-shot classification, achieving state-of-the-art performance without retraining.</p></details>
+      <details class="btn"><summary>Abstract</summary><p>The Balanced-Pairwise-Affinities (BPA) transform is a training-free optimal-transport-inspired feature transform that balances pairwise relations among samples, improving transductive few-shot classification without retraining and achieving state-of-the-art results on multiple benchmarks.</p></details>
       <div class="buttons">
         <a class="btn" href="https://proceedings.mlr.press/v235/shalam24a.html" target="_blank">Paper</a>
         <a class="btn" href="https://github.com/DanielShalam/BPA" target="_blank">Code</a>
@@ -79,7 +73,7 @@
       <div class="venue">BMVC 2023</div>
       <div class="title">MFSC: Matching by Few-Shot Classification</div>
       <div class="authors"><strong>Daniel Shalam</strong>, Elie Abboud, Roee Litman, Simon Korman</div>
-      <details class="btn"><summary>Abstract</summary><p>MFSC reformulates visual correspondence as few-shot classification, where match candidates act as prototypes. This approach enhances robustness to domain shifts and low-label scenarios, yielding strong results on standard correspondence benchmarks.</p></details>
+      <details class="btn"><summary>Abstract</summary><p>MFSC reinterprets visual correspondence as a few-shot classification task, where match candidates act as class prototypes. This approach enhances performance under low supervision and domain shifts, demonstrating competitive results on multiple correspondence benchmarks.</p></details>
       <div class="buttons">
         <a class="btn" href="https://papers.bmvc2023.org/0677.pdf" target="_blank">Paper</a>
       </div>
