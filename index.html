@@ -1,91 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daniel Shalam</title>
-  <style>
-    body {font-family:'Inter',sans-serif;background:#fafafa;color:#111;line-height:1.6;max-width:900px;margin:auto;padding:40px;}
-    header {display:flex;flex-direction:column;align-items:center;text-align:left;margin-bottom:40px;}
-    .avatar {width:220px;height:220px;border-radius:50%;object-fit:cover;margin-bottom:20px;border:3px solid #ccc;}
-    nav a {color:#2F80ED;text-decoration:none;margin:0 6px;}
-    .btn {color:#2F80ED;background:#fff;border:1px solid #ddd;padding:6px 10px;border-radius:6px;text-decoration:none;font-size:0.9rem;}
-    .pubimg {
-      width: 100%;
-      height: 440px;
-      object-fit: contain;
-      object-position: center;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      background: #fff;
-    }
-    .pub {margin-bottom:30px;background:#fff;padding:15px;border-radius:10px;box-shadow:0 1px 3px rgba(0,0,0,.06);}
-    details.btn {background:#fff;border:1px solid #ddd;border-radius:6px;padding:6px 10px;margin-top:6px;}
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Daniel Shalam is a computer vision researcher and Ph.D. candidate working on multimodal alignment, MLLM grounding, and data-efficient learning." />
+  <meta name="theme-color" content="#f5f7f9" />
+  <meta property="og:title" content="Daniel Shalam — Computer Vision Researcher" />
+  <meta property="og:description" content="Research in multimodal alignment, MLLM grounding, and data-efficient computer vision." />
+  <meta property="og:type" content="website" />
+  <title>Daniel Shalam — Computer Vision Researcher</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <img src="main.jpg" alt="Daniel Shalam" class="avatar" />
-    <h1>Daniel Shalam</h1>
-    <p>Ph.D. Candidate, Computer Science - University of Haifa</p>
-    <p>I am a Ph.D. candidate in Computer Science at the University of Haifa, advised by Dr. Simon Korman. My research focuses on representation learning, multimodal alignment, and generative modeling - studying how independent vision and text encoders can be aligned for few-shot multimodal learning. My work combines principles from optimal transport, flow-based methods, and data-efficient adaptation. I received my M.Sc. from the University of Haifa, where I developed optimal-transport-based frameworks for few-shot classification and self-supervised learning. I am a recipient of the Bloom Excellence Scholarship and the Dean’s List Award, and presented my research at the Israel Computer Vision Day 2024. I am broadly interested in efficient and interpretable learning systems that bridge theoretical insight with large-scale experimentation.</p>
-    <nav>
-      <a href="#publications">Publications</a>
-      <a href="CV_Daniel.pdf">CV</a>
-      <a href="mailto:Dani360@gmail.com">Email</a>
-      <a href="https://scholar.google.com/citations?user=Ffu2TCkAAAAJ" target="_blank">Scholar</a>
-      <a href="https://github.com/DanielShalam" target="_blank">GitHub</a>
-    </nav>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Daniel Shalam, home">
+        <span class="brand-mark" aria-hidden="true">DS</span>
+        <span class="brand-name">Daniel Shalam</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#publications">Publications</a>
+        <a class="nav-cta" href="CV_Daniel.pdf">View CV</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="publications">
-    <h2>Publications</h2>
-<!-- 
-    <div class="pub">
-      <div class="venue">Under review</div>
-      <div class="title"><strong>Few-Shot Flow: Flow-Matching Alignment for Uni-Modal Vision-Language Models</strong></div>
-      <div class="authors">Daniel Shalam, Simon Korman</div>
-      <img class="pubimg" src="FSF_workflow.png" alt="Few-Shot Flow paper image"/>
-      <details class="btn"><summary>Abstract</summary><p>Few-Shot Flow (FSF) aligns independent vision and text encoders without paired data. It combines an orthogonal Procrustes mapping with a flow-matching prior that preserves geometry while enabling flexible adaptation for few-shot multimodal classification, achieving strong results on challenging domains such as medical imaging.</p></details>
-      <div class="buttons">
-        <a class="btn" href="#">arXiv (soon)</a>
-      </div>
-    </div> -->
+  <main id="main-content">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Computer vision &amp; multimodal learning</p>
+          <h1 id="hero-title">Daniel Shalam</h1>
+          <p class="hero-headline">Building data-efficient multimodal systems that connect research with real-world applications.</p>
+          <p class="hero-summary">
+            I am a Ph.D. candidate in Computer Science at the University of Haifa, advised by Dr. Simon Korman, and an Applied Scientist Intern at Amazon Prime Sports. My research focuses on multimodal alignment, MLLM grounding, and data-efficient computer vision, with recent work spanning image, video, and audio localization.
+          </p>
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button button-primary" href="#publications">Explore my work</a>
+            <a class="button button-secondary" href="CV_Daniel.pdf">View CV</a>
+          </div>
+          <div class="profile-links">
+            <a href="mailto:Dani360@gmail.com">Email</a>
+            <a href="https://scholar.google.com/citations?user=Ffu2TCkAAAAJ" target="_blank" rel="noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/DanielShalam" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
 
-    <div class="pub">
-      <div class="venue">ECCV 2024</div>
-      <div class="title" href="https://arxiv.org/abs/2408.02014"><strong>Unsupervised Representation Learning by Balanced Self-Attention Matching (BAM)</strong></div>
-      <div class="authors">Daniel Shalam, Simon Korman</div>
-      <img class="pubimg" src="BAM_workflow.png" alt="BAM paper image"/>
-      <details class="btn"><summary>Abstract</summary><p>Balanced Self-Attention Matching (BAM) aligns self-attention representations across images to learn geometry-preserving, semantically consistent features in a completely unsupervised manner. This approach improves downstream recognition and robustness to distribution shifts.</p></details>
-      <div class="buttons">
-        <a class="btn" href="https://arxiv.org/abs/2408.02014" target="_blank">Paper</a>
-        <a class="btn" href="https://github.com/DanielShalam/BAM" target="_blank">Code</a>
+        <aside class="profile-card" aria-label="Current appointments">
+          <div class="portrait-frame">
+            <img src="assets/main.jpg" width="231" height="256" alt="Daniel Shalam presenting research at a poster session" />
+          </div>
+          <div class="profile-card-body">
+            <p class="card-label">Currently</p>
+            <div class="appointment">
+              <strong>Applied Scientist Intern</strong>
+              <span>Amazon Prime Sports</span>
+              <span class="appointment-date">Mar 2026 — Present</span>
+            </div>
+            <div class="appointment">
+              <strong>Ph.D. Candidate</strong>
+              <span>University of Haifa</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section publications-section" id="publications" aria-labelledby="publications-title">
+      <div class="container">
+        <div class="section-heading publications-heading">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 id="publications-title">Publications</h2>
+          </div>
+          <p>Research spanning multimodal grounding, encoder alignment, self-supervised learning, and few-shot classification.</p>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication publication-featured">
+            <div class="publication-visual image-visual">
+              <img src="assets/MTLA_pipeline.png" width="1600" height="407" loading="lazy" decoding="async" alt="Multi-Token Localized Attention pipeline for refining MLLM bounding-box predictions using localized attention maps" />
+            </div>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">WACV 2027</span>
+                <span>Under review</span>
+              </div>
+              <h3><a href="https://arxiv.org/abs/2607.05978" target="_blank" rel="noreferrer">Propose and Attend: Training-free MLLM Grounding Confidence via Multi-Token Localized Attention</a></h3>
+              <p class="authors"><strong>Daniel Shalam</strong>, Emanuel Ben Baruch, Avi Ben Cohen, Tal Remez</p>
+              <p class="publication-summary">A training-free approach to MLLM grounding confidence based on multi-token localized attention.</p>
+              <div class="publication-actions">
+                <a class="text-link" href="https://arxiv.org/abs/2607.05978" target="_blank" rel="noreferrer">arXiv <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-visual image-visual">
+              <img src="assets/FSF_workflow.png" width="4998" height="1685" loading="lazy" decoding="async" alt="Diagram of independently pretrained vision and text encoders aligned through flow-based transport" />
+            </div>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">Preprint</span>
+                <span>2026</span>
+              </div>
+              <h3><a href="https://openreview.net/forum?id=educGk5ykl" target="_blank" rel="noreferrer">Flow-Based Alignment of Uni-Modal Vision and Text Encoders for Few-Shot Image Classification</a></h3>
+              <p class="authors"><strong>Daniel Shalam</strong>, Simon Korman</p>
+              <p class="publication-summary">A flow-based approach for aligning independently pretrained vision and text encoders for few-shot image classification.</p>
+              <div class="publication-actions">
+                <a class="text-link" href="https://openreview.net/forum?id=educGk5ykl" target="_blank" rel="noreferrer">OpenReview <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication publication-biomedical">
+            <div class="publication-visual image-visual image-visual-stacked">
+              <a class="figure-link" href="assets/BIO_FSA_POSTER.jpg" target="_blank" rel="noreferrer" aria-label="Open the full biomedical comparison figure">
+                <img src="assets/BIO_FSA_CARD.jpg" width="1440" height="1490" loading="lazy" decoding="async" alt="Three stacked diagrams comparing vision-only probing, joint vision-language models, and alignment of independent vision and text encoders for few-shot biomedical classification" />
+              </a>
+            </div>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">ICML 2026</span>
+                <span>FM4LS Workshop</span>
+              </div>
+              <h3><a href="https://openreview.net/forum?id=U7nPb0GkvG" target="_blank" rel="noreferrer">Few-Shot Biomedical Image Classification by Alignment of Independently Pretrained Encoders</a></h3>
+              <p class="authors"><strong>Daniel Shalam</strong>, Simon Korman</p>
+              <p class="publication-summary">Alignment of independently pretrained encoders for data-efficient classification in biomedical imaging.</p>
+              <div class="publication-actions">
+                <a class="text-link" href="https://openreview.net/forum?id=U7nPb0GkvG" target="_blank" rel="noreferrer">OpenReview <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="assets/BIO_FSA_POSTER.jpg" target="_blank" rel="noreferrer">Full figure <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-visual image-visual">
+              <img src="assets/BAM_workflow.png" width="1650" height="984" loading="lazy" decoding="async" alt="Balanced Self-Attention Matching compared with SWAV and SimCLR" />
+            </div>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">ECCV 2024</span>
+              </div>
+              <h3><a href="https://arxiv.org/abs/2408.02014" target="_blank" rel="noreferrer">Unsupervised Representation Learning by Balanced Self-Attention Matching</a></h3>
+              <p class="authors"><strong>Daniel Shalam</strong>, Simon Korman</p>
+              <p class="publication-summary">BAM matches self-attention representations across images to learn geometry-preserving features without labels.</p>
+              <div class="publication-actions">
+                <a class="text-link" href="https://arxiv.org/abs/2408.02014" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/DanielShalam/BAM" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-visual image-visual">
+              <img src="assets/BPA_illustration.png" width="2448" height="565" loading="lazy" decoding="async" alt="Balanced-Pairwise-Affinities feature transform workflow" />
+            </div>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">ICML 2024</span>
+              </div>
+              <h3><a href="https://proceedings.mlr.press/v235/shalam24a.html" target="_blank" rel="noreferrer">The Balanced-Pairwise-Affinities Feature Transform</a></h3>
+              <p class="authors"><strong>Daniel Shalam</strong>, Simon Korman</p>
+              <p class="publication-summary">A training-free, optimal-transport-inspired feature transform for transductive few-shot classification.</p>
+              <div class="publication-actions">
+                <a class="text-link" href="https://proceedings.mlr.press/v235/shalam24a.html" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/DanielShalam/BPA" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="publication">
+            <div class="publication-visual image-visual">
+              <img src="assets/MFSC_workflow.png" width="1071" height="271" loading="lazy" decoding="async" alt="Matching by Few-Shot Classification workflow" />
+            </div>
+            <div class="publication-body">
+              <div class="publication-meta">
+                <span class="venue">BMVC 2023</span>
+              </div>
+              <h3><a href="https://papers.bmvc2023.org/0677.pdf" target="_blank" rel="noreferrer">MFSC: Matching by Few-Shot Classification</a></h3>
+              <p class="authors"><strong>Daniel Shalam</strong>, Elie Abboud, Roee Litman, Simon Korman</p>
+              <p class="publication-summary">A few-shot classification formulation for robust visual correspondence under limited supervision and domain shifts.</p>
+              <div class="publication-actions">
+                <a class="text-link" href="https://papers.bmvc2023.org/0677.pdf" target="_blank" rel="noreferrer">Paper <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-title">
+      <div class="container contact-panel">
+        <div>
+          <p class="eyebrow eyebrow-light">Contact</p>
+          <h2 id="contact-title">Interested in multimodal learning or computer vision research?</h2>
+        </div>
+        <a class="button button-light" href="mailto:Dani360@gmail.com">Get in touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 Daniel Shalam</p>
+      <div class="footer-links">
+        <a href="mailto:Dani360@gmail.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=Ffu2TCkAAAAJ" target="_blank" rel="noreferrer">Scholar</a>
+        <a href="https://github.com/DanielShalam" target="_blank" rel="noreferrer">GitHub</a>
       </div>
     </div>
-
-    <div class="pub">
-      <div class="venue">ICML 2024</div>
-      <div class="title"><strong>The Balanced-Pairwise-Affinities Feature Transform (BPA)</strong></div>
-      <div class="authors">Daniel Shalam, Simon Korman</div>
-      <img class="pubimg" src="BPA_illustration.png" alt="BPA paper image"/>
-      <details class="btn"><summary>Abstract</summary><p>The Balanced-Pairwise-Affinities (BPA) transform is a training-free optimal-transport-inspired feature transform that balances pairwise relations among samples, improving transductive few-shot classification without retraining and achieving state-of-the-art results on multiple benchmarks.</p></details>
-      <div class="buttons">
-        <a class="btn" href="https://proceedings.mlr.press/v235/shalam24a.html" target="_blank">Paper</a>
-        <a class="btn" href="https://github.com/DanielShalam/BPA" target="_blank">Code</a>
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="venue">BMVC 2023</div>
-      <div class="title"><strong>MFSC: Matching by Few-Shot Classification</strong></div>
-      <div class="authors">Daniel Shalam, Elie Abboud, Roee Litman, Simon Korman</div>
-      <img class="pubimg" src="MFSC_workflow.png" alt="MFSC paper image"/>
-      <details class="btn"><summary>Abstract</summary><p>MFSC reinterprets visual correspondence as a few-shot classification task, where match candidates act as class prototypes. This approach enhances performance under low supervision and domain shifts, demonstrating competitive results on multiple correspondence benchmarks.</p></details>
-      <div class="buttons">
-        <a class="btn" href="https://papers.bmvc2023.org/0677.pdf" target="_blank">Paper</a>
-      </div>
-    </div>
-  </section>
+  </footer>
 </body>
 </html>

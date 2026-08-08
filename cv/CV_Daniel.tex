@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Daniel Shalam - Research CV
+% Uses altacv class + paracol. Tailored for AI/ML research roles.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tectonic does not run pdfx's shell helper, so provide a stable PDF
+% creation timestamp directly (the source's initial publication time).
+\edef\pdfcreationdate{\string D:20260808165618+03'00'}
+\documentclass[10pt,a4paper,withhyper]{altacv}
+
+% Page layout
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm}
+\setlength{\columnsep}{1.2cm}
+\usepackage{paracol}
+\columnratio{0.4}
+
+% Fonts and colors
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\namefont}{\fontsize{22}{25}\selectfont\bfseries}
+\renewcommand{\taglinefont}{\fontsize{11.5}{14}\selectfont\bfseries}
+\renewcommand{\personalinfofont}{\fontsize{9}{11}\selectfont\bfseries}
+\renewcommand{\cvsectionfont}{\fontsize{14}{17}\selectfont\bfseries}
+\definecolor{accent}{HTML}{2F80ED}
+\definecolor{heading}{HTML}{333333}
+\definecolor{emphasis}{HTML}{2C3E50}
+\colorlet{name}{black}
+
+% Keep employer and institution names neutral while preserving blue accents
+% for links, icons, and the header.
+\let\accentcvevent\cvevent
+\renewcommand{\cvevent}[4]{%
+  \begingroup
+  \colorlet{accent}{emphasis}%
+  \accentcvevent{#1}{#2}{#3}{#4}%
+  \endgroup
+}
+
+% Compact separator for degree entries; other dividers retain AltaCV spacing.
+\newcommand{\educationdivider}{%
+  \vspace{-0.25\baselineskip}%
+  \textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}%
+}
+
+% Hyperlinks
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent
+}
+
+% Personal info
+\name{Daniel Shalam}
+\tagline{Ph.D. Candidate in Computer Science — Computer Vision \& Multimodal AI}
+\personalinfo{
+  \email{Dani360@gmail.com}
+  \github{DanielShalam}
+  \printinfo[homepage]{\faGlobe}{Google Scholar}[https://scholar.google.com/citations?user=Ffu2TCkAAAAJ]
+}
+
+\begin{document}
+\makecvheader
+
+% ===== RESEARCH PROFILE =====
+{\fontsize{10.5}{13}\selectfont\color{emphasis}
+Ph.D. candidate and Applied Scientist Intern at Amazon Prime Sports working on \textbf{multimodal alignment, MLLM grounding, and data-efficient computer vision}. My work connects methodological research with applied multimodal systems and has appeared in leading machine learning and computer vision venues.
+\par}
+
+\begin{paracol}{2}
+
+% ---------- LEFT COLUMN ----------
+\cvsection{Education}
+
+\cvevent{Ph.D. in Computer Science}{University of Haifa}{Oct 2024 -- Present}{}
+\begin{itemize}
+  \item \textbf{Advisor:} Dr. Simon Korman
+  \item \textbf{Research:} Flow-based alignment of independent vision and text encoders for few-shot learning.
+\end{itemize}
+
+\educationdivider
+
+\cvevent{M.Sc. in Computer Science}{University of Haifa}{Oct 2022 -- Oct 2024}{}
+\begin{itemize}
+  \item \textbf{Thesis:} \textit{The Balanced-Pairwise-Affinities Feature Transform} (grade: 98)
+  \item Developed \textbf{BAM, BPA, and MFSC} across self-supervised learning, few-shot classification, and visual correspondence.
+\end{itemize}
+
+\educationdivider
+
+\cvevent{B.Sc. in Computer Science}{University of Haifa}{Graduated Aug 2022}{}
+
+\cvsection{Honors}
+\begin{itemize}
+  \item \textbf{Bloom School of Advanced Studies Excellence Scholarship} --- Competitive doctoral excellence scholarship
+  \item \textbf{Dean's List} --- M.Sc. program
+  \item \textbf{Oral Presentation} --- Israel Computer Vision Day 2024
+\end{itemize}
+
+\cvsection{Technical Skills}
+\cvtag{MLLMs}
+\cvtag{Agentic AI}
+\cvtag{LLM Agents}
+\cvtag{Tool Use}
+\cvtag{Multimodal Grounding}
+\cvtag{Computer Vision}
+\cvtag{Multimodal Alignment}
+\cvtag{Representation Learning}
+\cvtag{Few-Shot Learning}
+\cvtag{Self-Supervised Learning}
+\cvtag{Optimal Transport}
+\cvtag{Diffusion}
+\divider
+
+\cvtag{Python}
+\cvtag{PyTorch}
+\cvtag{AWS}
+\cvtag{TensorFlow}
+\cvtag{OpenCV}
+\cvtag{Weights \& Biases}
+\cvtag{Slurm}
+
+% ---------- SWITCH COLUMN ----------
+\switchcolumn
+
+% ---------- RIGHT COLUMN ----------
+\cvsection{Industry Research}
+
+\cvevent{Applied Scientist Intern}{Amazon Prime Sports}{Mar 2026 -- Present}{}
+\begin{itemize}
+  \item Researching \textbf{MLLMs}, including \textbf{Qwen}, for localization in images, video, and audio.
+  \item Co-developed \textbf{MTLA}, a training-free grounding-confidence score, yielding a first-author paper under review at \textbf{WACV 2027}.
+\end{itemize}
+
+\cvsection{Publications}
+\begin{itemize}
+  \item \textbf{Daniel Shalam}, Emanuel Ben Baruch, Avi Ben Cohen, Tal Remez. \href{https://arxiv.org/abs/2607.05978}{\textit{Propose and Attend: Training-free MLLM Grounding Confidence via Multi-Token Localized Attention}}. Under review at \textbf{WACV 2027}.
+  \item \textbf{Daniel Shalam}, Simon Korman. \href{https://openreview.net/forum?id=educGk5ykl}{\textit{Flow-Based Alignment of Uni-Modal Vision and Text Encoders for Few-Shot Image Classification}}. Preprint, 2026.
+  \item \textbf{Daniel Shalam}, Simon Korman. \href{https://openreview.net/forum?id=U7nPb0GkvG}{\textit{Few-Shot Biomedical Image Classification by Alignment of Independently Pretrained Encoders}}. \textbf{ICML 2026 FM4LS Workshop}.
+  \item \textbf{Daniel Shalam}, Simon Korman. \href{https://arxiv.org/abs/2408.02014}{\textit{Unsupervised Representation Learning by Balanced Self-Attention Matching}}. \textbf{ECCV 2024}.
+  \item \textbf{Daniel Shalam}, Simon Korman. \href{https://arxiv.org/abs/2407.01467}{\textit{The Balanced-Pairwise-Affinities Feature Transform}}. \textbf{ICML 2024}.
+  \item \textbf{Daniel Shalam}, Elie Abboud, Roee Litman, Simon Korman. \href{https://papers.bmvc2023.org/0677.pdf}{\textit{MFSC: Matching by Few-Shot Classification}}. \textbf{BMVC 2023}.
+\end{itemize}
+
+\cvsection{Additional}
+\begin{itemize}
+  \item \textbf{Languages:} English (Fluent), Hebrew (Native)
+  \item \textbf{Teaching:} Computer Vision TA (2022 -- 2024)
+  \item Completed full military service (IDF).
+\end{itemize}
+
+\end{paracol}
+\end{document}
