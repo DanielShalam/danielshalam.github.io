@@ -416,6 +416,11 @@ a {
   border-color: #bed3e9;
 }
 
+.publication.publication-text-only {
+  min-height: 0;
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .publication-visual {
   min-height: 286px;
   border-right: 1px solid var(--line);
