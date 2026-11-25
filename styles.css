@@ -421,6 +421,24 @@ a {
   grid-template-columns: minmax(0, 1fr);
 }
 
+.publication.publication-wide {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.publication-wide .publication-visual {
+  min-height: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.publication-wide .image-visual {
+  padding: 28px clamp(20px, 4vw, 48px);
+}
+
+.publication-wide .image-visual img {
+  max-height: 340px;
+}
+
 .publication-visual {
   min-height: 286px;
   border-right: 1px solid var(--line);
